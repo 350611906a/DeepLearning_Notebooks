@@ -50,3 +50,31 @@ https://www.cnblogs.com/honway/p/9559324.html
 
 ## 4、将所有结果保存到github上  
 
+步骤：
+
+- 本地新建一个文件夹
+
+- 进入后，右击 --> Git Bash Here --> 初始化`git init`（会出现master，表示主分支），--> ls -a --> 可以查看到./git，表示成功。
+
+- 查看远程信息
+
+  git remote -v
+
+- 将本地仓库与远程仓库关联
+
+  git remote add origin https://github.com/350611906a/DeepLearning_Notebooks
+
+- 将远程仓库clone到本地
+
+  git clone https://https://github.com/350611906a/DeepLearning_Notebooks
+
+  clone下来之后，远程连接就建立了，因为clone下来的仓库已经有了.git文件。
+
+- 本地修改后，上传到本地仓库
+
+  git commit -a -m "日志"
+
+- 上传到github
+
+  git push origin master
+
