@@ -78,3 +78,27 @@ https://www.cnblogs.com/honway/p/9559324.html
 
   git push origin master
 
+
+
+## 5、github出现错误的解决方法  
+
+1、报错：
+
+```shell
+ git clone https://github.com/350611906a/DeepLearning_Notebooks
+Cloning into 'DeepLearning_Notebooks'...
+fatal: unable to access 'https://github.com/350611906a/DeepLearning_Notebooks/': OpenSSL SSL_connect: SSL_ERROR_SYSCALL in connection to github.com:443
+```
+
+解决方法：
+
+在github项目在本地的根目录下打开git命令行，执行如下命令：
+
+```shell
+git config --global --unset http.proxy
+```
+
+
+
+
+
